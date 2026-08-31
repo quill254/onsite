@@ -12,11 +12,7 @@ export function SiteFooter() {
             Fibre and wireless internet for homes, businesses and institutions across the Thika
             region — installed and supported by a local team.
           </p>
-          <p className="mt-6 text-xs uppercase tracking-[0.18em] text-signal">
-            Concept redesign — not an official Onsite property
-          </p>
         </div>
-
         <div>
           <h4 className="text-sm font-semibold uppercase tracking-widest text-ink-foreground/60">
             Pages
@@ -36,7 +32,6 @@ export function SiteFooter() {
             ))}
           </ul>
         </div>
-
         <div>
           <h4 className="text-sm font-semibold uppercase tracking-widest text-ink-foreground/60">
             Contact
@@ -57,11 +52,9 @@ export function SiteFooter() {
           </ul>
         </div>
       </div>
-
       <div className="border-t border-ink-foreground/10">
         <div className="mx-auto max-w-6xl px-4 py-5 text-xs text-ink-foreground/55">
-          © {new Date().getFullYear()} {COMPANY.legalName}. All details shown are placeholders
-          pending confirmation.
+          © {new Date().getFullYear()} {COMPANY.legalName}. All rights reserved.
         </div>
       </div>
     </footer>
