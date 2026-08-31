@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logoAsset from "@/assets/onsite-logo.png.asset.json";
+import onsiteLogo from "@/assets/onsite-logo.png";
 
 const nav = [
   { to: "/", label: "Home" },
@@ -21,7 +21,7 @@ export function SiteHeader() {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
         <Link to="/" className="flex items-center gap-2.5" onClick={() => setOpen(false)}>
           <img
-            src={logoAsset.url}
+            src={onsiteLogo}
             alt="Onsite Fiber logo"
             className="size-9 rounded-lg object-contain"
           />
