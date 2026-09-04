@@ -9,7 +9,7 @@ export function SiteFooter() {
         <div className="md:col-span-2">
           <h3 className="font-display text-xl font-bold">{COMPANY.legalName}</h3>
           <p className="mt-3 max-w-sm text-sm text-ink-foreground/70">
-            Fibre and wireless internet for homes, businesses and institutions across the Thika
+            Fibre and wireless internet for homes, businesses and institutions across the Juja
             region — installed and supported by a local team.
           </p>
         </div>

@@ -1,9 +1,9 @@
 export const COMPANY = {
   legalName: "Onsite Internet Solutions",
-  email: "hello@example.com",
-  phone: "+254 700 000 000",
-  whatsapp: "+254 700 000 000",
-  address: "Thika Town, Kiambu County, Kenya",
+  email: ".",
+  phone: "+254 714 579 250",
+  whatsapp: "+254 714 579 250",
+  address: "Juja Town, Kiambu County, Kenya",
   hours: "Mon–Sat, 8:00am – 8:00pm · Emergency support 24/7",
 };
 
@@ -20,24 +20,24 @@ export const HOME_PLANS: Plan[] = [
   {
     name: "Starter Home",
     speed: "8 Mbps",
-    price: "2,500",
+    price: "1,500",
     audience: "Browsing, WhatsApp, 1–2 devices",
-    features: ["Unlimited data", "Free router on 6-month term", "Next-day installation"],
+    features: ["Unlimited data",  "Next-day installation"],
   },
   {
     name: "Family",
-    speed: "20 Mbps",
-    price: "3,500",
+    speed: "15 Mbps",
+    price: "2,000",
     audience: "Streaming and study for a full household",
     features: ["Unlimited data", "HD streaming on 3 screens", "Free router", "Priority support"],
     featured: true,
   },
   {
     name: "Power Home",
-    speed: "40 Mbps",
-    price: "5,000",
+    speed: "20 Mbps",
+    price: "2,500",
     audience: "Gaming, remote work, heavy streaming",
-    features: ["Unlimited data", "Low-latency routing", "Free router", "Same-day fault response"],
+    features: ["Unlimited data", "Low-latency routing",  "Same-day fault response"],
   },
 ];
 
@@ -45,42 +45,29 @@ export const BUSINESS_PLANS: Plan[] = [
   {
     name: "Small Business",
     speed: "30 Mbps",
-    price: "8,000",
+    price: "3,000",
     audience: "Shops, salons, small offices",
     features: ["Business-grade uptime", "Static IP option", "4-hour fault response"],
   },
-  {
-    name: "Office Pro",
-    speed: "60 Mbps",
-    price: "14,000",
-    audience: "Offices of 10–30 staff",
-    features: ["Dedicated bandwidth", "Static IP included", "Managed Wi-Fi", "SLA-backed support"],
-    featured: true,
-  },
-  {
-    name: "Institution",
-    speed: "100 Mbps+",
-    price: "Custom",
-    audience: "Schools, colleges, hospitals",
-    features: ["Campus-wide coverage", "Content filtering", "Bandwidth scheduling", "On-site engineer"],
-  },
+  
+  
 ];
-
 export const COVERAGE_AREAS = [
+  { area: "Kenol", status: "Live" },
+  { area: "Kabati", status: "Live" },
   { area: "Thika Town", status: "Live" },
   { area: "Makongeni", status: "Live" },
-  { area: "Section 9", status: "Live" },
-  { area: "Kiganjo", status: "Live" },
-  { area: "Landless", status: "Live" },
-  { area: "Ngoingwa", status: "Live" },
-  { area: "Kisii Estate", status: "Live" },
-  { area: "Gatuanyaga", status: "Planned" },
-  { area: "Juja", status: "Planned" },
-  { area: "Ruiru", status: "Planned" },
-  { area: "Kenol", status: "Survey required" },
-  { area: "Githurai", status: "Survey required" },
+  { area: "Witeithie", status: "Live" },
+  { area: "Highpoint", status: "Live" },
+  { area: "Juja Town", status: "Live" },
+  { area: "Juja Farm", status: "Live" },
+  { area: "Kalimoni", status: "Live" },
+  { area: "Kenyatta Road", status: "Live" },
+  { area: "Toll", status: "Live" },
+  { area: "Kimbo", status: "Live" },
+  { area: "Kwa Kairo", status: "Live" },
+  { area: "Ruiru Ndani", status: "Live" },
 ] as const;
-
 export const FAQS = [
   {
     q: "How long does installation take?",
@@ -125,6 +112,6 @@ export const TESTIMONIALS = [
     quote:
       "We moved our computer lab to Onsite last term. Bandwidth scheduling keeps the classes usable all day.",
     name: "Mr. Otieno",
-    area: "Section 9",
+    area: "Kimbo",
   },
 ];
