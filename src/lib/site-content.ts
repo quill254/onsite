@@ -29,7 +29,7 @@ export const HOME_PLANS: Plan[] = [
     speed: "15 Mbps",
     price: "2,000",
     audience: "Streaming and study for a full household",
-    features: ["Unlimited data", "HD streaming on 3 screens", "Free router", "Priority support"],
+    features: ["Unlimited data", "HD streaming on 3 screens",  "Priority support"],
     featured: true,
   },
   {
