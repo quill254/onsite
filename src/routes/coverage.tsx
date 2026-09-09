@@ -8,13 +8,13 @@ import { COVERAGE_AREAS } from "@/lib/site-content";
 export const Route = createFileRoute("/coverage")({
   head: () => ({
     meta: [
-      { title: "Coverage Areas — Onsite Internet Solutions, Thika" },
+      { title: "Coverage Areas  Onsite Internet Solutions, Juja" },
       {
         name: "description",
         content:
-          "See which Thika-area estates Onsite Internet Solutions covers, check your street instantly, and request a survey if your area isn't live yet.",
+          "See which Juja-area estates Onsite Internet Solutions covers, check your street instantly, and request a survey if your area isn't live yet.",
       },
-      { property: "og:title", content: "Coverage Areas — Onsite Internet Solutions" },
+      { property: "og:title", content: "Coverage Areas  Onsite Internet Solutions" },
       {
         property: "og:description",
         content: "Check whether Onsite fibre and wireless internet reaches your area.",
@@ -36,7 +36,7 @@ function CoveragePage() {
       <PageHero
         eyebrow="Coverage"
         title="Do we reach your area?"
-        description="Our network covers Thika town and the surrounding estates, with new areas added as demand grows."
+        description="Our network covers Juja town and the surrounding estates, with new areas added as demand grows."
       />
 
       <section className="section-y">
@@ -61,7 +61,7 @@ function CoveragePage() {
               ))}
             </ul>
             <p className="mt-4 text-xs text-muted-foreground">
-              Illustrative area list — to be replaced with Onsite's actual service map.
+              Illustrative area list  to be replaced with Onsite's actual service map.
             </p>
           </div>
 
@@ -70,14 +70,14 @@ function CoveragePage() {
               <div className="absolute inset-0 opacity-25 [background-image:radial-gradient(circle,white_1px,transparent_1px)] [background-size:22px_22px]" />
               <div className="relative">
                 <Radio className="size-8 text-signal" />
-                <h3 className="mt-4 text-xl font-bold">Thika service area</h3>
+                <h3 className="mt-4 text-xl font-bold">Juja service area</h3>
                 <p className="mt-2 text-sm text-ink-foreground/75">
-                  Wireless coverage radiates from our masts in Thika town, with fibre routes along
+                  Wireless coverage radiates from our masts in Juja town, with fibre routes along
                   the main estates. A real coverage map will replace this graphic.
                 </p>
                 <div className="mt-8 space-y-3">
                   {[
-                    { l: "Core wireless radius", v: "~12 km from Thika town" },
+                    { l: "Core wireless radius", v: "12 km from Juja town" },
                     { l: "Fibre routes", v: "Selected estates & business parks" },
                     { l: "Survey turnaround", v: "1 working day" },
                   ].map((r) => (

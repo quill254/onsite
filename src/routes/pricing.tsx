@@ -7,13 +7,13 @@ import { BUSINESS_PLANS, HOME_PLANS } from "@/lib/site-content";
 export const Route = createFileRoute("/pricing")({
   head: () => ({
     meta: [
-      { title: "Internet Packages & Prices — Onsite Internet Solutions" },
+      { title: "Internet Packages & Prices  Onsite Internet Solutions" },
       {
         name: "description",
         content:
           "Compare Onsite home, business and institution internet packages: speeds, monthly prices, installation terms and what's included.",
       },
-      { property: "og:title", content: "Internet Packages & Prices — Onsite" },
+      { property: "og:title", content: "Internet Packages & Prices  Onsite" },
       {
         property: "og:description",
         content: "Home, business and institution internet packages with unlimited data.",
@@ -29,7 +29,7 @@ function PricingPage() {
       <PageHero
         eyebrow="Packages"
         title="Simple monthly pricing, unlimited data"
-        description="One clear price per month. Installation is quoted after a quick survey — no long contracts on home plans."
+        description="One clear price per month. Installation is quoted after a quick survey  no long contracts on home plans."
       />
 
       <section className="section-y">
@@ -62,7 +62,7 @@ function PricingPage() {
           </div>
 
           <p className="mt-6 text-xs text-muted-foreground">
-            Placeholder pricing — final package names, speeds, fees and offers to be confirmed by
+            Placeholder pricing  final package names, speeds, fees and offers to be confirmed by
             Onsite.
           </p>
 

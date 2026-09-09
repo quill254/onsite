@@ -18,7 +18,7 @@ import { COMPANY } from "@/lib/site-content";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Onsite Internet Solutions — Get Connected in Thika" },
+      { title: "Contact Onsite Internet Solutions  Get Connected in Juja" },
       {
         name: "description",
         content:
@@ -87,7 +87,7 @@ function ContactPage() {
           <div className="rounded-2xl border border-border bg-card p-6 shadow-soft md:p-8">
             {sent ? (
               <div className="py-10 text-center">
-                <h2 className="font-display text-2xl font-bold">Thanks — we've got your details</h2>
+                <h2 className="font-display text-2xl font-bold">Thanks we've got your details</h2>
                 <p className="mt-3 text-sm text-muted-foreground">
                   A member of the team will call you back within one working day.
                 </p>

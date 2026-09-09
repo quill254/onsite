@@ -55,7 +55,7 @@ export function ChatWidget() {
           <div className="flex items-center justify-between bg-ink-gradient px-4 py-3 text-ink-foreground">
             <div>
               <p className="text-sm font-bold">Ask Onsie</p>
-              <p className="text-[11px] text-ink-foreground/70">AI assistant · concept demo</p>
+              <p className="text-[11px] text-ink-foreground/70">AI assistant </p>
             </div>
             <button
               type="button"

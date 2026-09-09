@@ -1,27 +1,30 @@
+
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
 import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
 import { COMPANY } from "@/lib/site-content";
 import teamGroup from "@/assets/team-group.jpg";
-import team1 from "@/assets/team-1.jpg";
-import team2 from "@/assets/team-2.jpg";
-import team3 from "@/assets/team-3.jpg";
-import team4 from "@/assets/team-4.jpg";
+
+// Imports needed if you restore the TEAM section below:
+// import team1 from "@/assets/team-1.jpg";
+// import team2 from "@/assets/team-2.jpg";
+// import team3 from "@/assets/team-3.jpg";
+// import team4 from "@/assets/team-4.jpg";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Us — The Team Behind Onsite Internet Solutions" },
+      { title: "About Us  The Team Behind Onsite Internet Solutions" },
       {
         name: "description",
         content:
-          "Meet the local Thika-based team installing and supporting unlimited home, business and school internet across Kiambu County.",
+          "Meet the local Juja-based team installing and supporting unlimited home, business and school internet across Kiambu County.",
       },
       { property: "og:title", content: "About Onsite Internet Solutions" },
       {
         property: "og:description",
-        content: "A local crew of installers, engineers and support agents serving Thika and beyond.",
+        content: "A local crew of installers, engineers and support agents serving Juja and beyond.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -30,17 +33,10 @@ export const Route = createFileRoute("/about")({
   component: AboutPage,
 });
 
-const TEAM = [
-  { name: "Team member name", role: "Lead Installation Technician", photo: team1 },
-  { name: "Team member name", role: "Customer Support", photo: team2 },
-  { name: "Team member name", role: "Network Engineer", photo: team3 },
-  { name: "Team member name", role: "Operations Manager", photo: team4 },
-];
-
 const VALUES = [
   {
     title: "Local first",
-    body: "Our technicians live in the same estates they serve, so help is minutes away — not a call centre in another county.",
+    body: "Our technicians live in the same estates they serve, so help is minutes away  not a call centre in another county.",
   },
   {
     title: "Honest connections",
@@ -57,7 +53,7 @@ function AboutPage() {
     <>
       <PageHero
         eyebrow="About us"
-        title="A local crew keeping Thika online"
+        title="A local crew keeping Juja online"
         description="Onsite Internet Solutions installs and supports unlimited internet for homes, businesses, schools and institutions across Thika and the surrounding areas."
       />
 
@@ -66,7 +62,7 @@ function AboutPage() {
           <Reveal>
             <img
               src={teamGroup}
-              alt="The Onsite Internet Solutions installation crew outside the Thika office"
+              alt="The Onsite Internet Solutions installation crew outside the Juja office"
               width={1600}
               height={900}
               loading="lazy"
@@ -80,12 +76,12 @@ function AboutPage() {
               </p>
               <h2 className="mt-3 text-3xl md:text-4xl">Started on the ground, still on the ground</h2>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-                We began by stringing wireless links between a handful of rooftops in Thika Town. Today
-                the same hands-on approach carries fibre and wireless connections into estates, shops,
-                offices and classrooms — with installations typically completed within two working days.
+                We began by stringing wireless links between a handful of rooftops in Juja Town. Today
+                the same hands on approach carries fibre and wireless connections into estates, shops,
+                offices and classrooms  with installations typically completed within two working days.
               </p>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                {COMPANY.address} · {COMPANY.hours}
+                {COMPANY.address}  {COMPANY.hours}
               </p>
               <Button asChild variant="signal" className="mt-6">
                 <Link to="/contact">Work with us</Link>
@@ -110,47 +106,60 @@ function AboutPage() {
           </div>
         </div>
       </section>
-
-      <section className="section-y">
-        <div className="mx-auto max-w-6xl px-4">
-          <p className="font-mono text-xs font-bold uppercase tracking-[0.2em] text-signal">
-            The team
-          </p>
-          <h2 className="mt-3 text-3xl md:text-4xl">Faces behind the network</h2>
-          <p className="mt-3 max-w-2xl text-sm text-muted-foreground">
-            Placeholder photos and names — swap in your real team pictures and titles.
-          </p>
-
-          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {TEAM.map((m, i) => (
-              <Reveal key={m.role} delay={i * 90}>
-                <figure className="group overflow-hidden rounded-2xl border border-border bg-card shadow-soft">
-                  <div className="aspect-square overflow-hidden bg-muted">
-                    <img
-                      src={m.photo}
-                      alt={`${m.role} at Onsite Internet Solutions`}
-                      width={800}
-                      height={800}
-                      loading="lazy"
-                      className="size-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
-                  </div>
-                  <figcaption className="p-4">
-                    <p className="font-accent text-base font-bold">{m.name}</p>
-                    <p className="font-mono text-[11px] uppercase tracking-[0.14em] text-muted-foreground">
-                      {m.role}
-                    </p>
-                  </figcaption>
-                </figure>
-              </Reveal>
-            ))}
-          </div>
-
-          <p className="mt-6 text-xs text-muted-foreground">
-            Concept page — team details pending confirmation by Onsite.
-          </p>
-        </div>
-      </section>
     </>
   );
 }
+
+/* ============================================================================
+   DISABLED TEAM SECTION & DATA
+   Uncomment below (and re-enable imports above) if you want to restore it.
+   ============================================================================
+
+const TEAM = [
+  { name: "Team member name", role: "Lead Installation Technician", photo: team1 },
+  { name: "Team member name", role: "Customer Support", photo: team2 },
+  { name: "Team member name", role: "Network Engineer", photo: team3 },
+  { name: "Team member name", role: "Operations Manager", photo: team4 },
+];
+
+function TeamSection() {
+  return (
+    <section className="section-y">
+      <div className="mx-auto max-w-6xl px-4">
+        <p className="font-mono text-xs font-bold uppercase tracking-[0.2em] text-signal">
+          The team
+        </p>
+
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {TEAM.map((m, i) => (
+            <Reveal key={m.role} delay={i * 90}>
+              <figure className="group overflow-hidden rounded-2xl border border-border bg-card shadow-soft">
+                <div className="aspect-square overflow-hidden bg-muted">
+                  <img
+                    src={m.photo}
+                    alt={`${m.role} at Onsite Internet Solutions`}
+                    width={800}
+                    height={800}
+                    loading="lazy"
+                    className="size-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <figcaption className="p-4">
+                  <p className="font-accent text-base font-bold">{m.name}</p>
+                  <p className="font-mono text-[11px] uppercase tracking-[0.14em] text-muted-foreground">
+                    {m.role}
+                  </p>
+                </figcaption>
+              </figure>
+            </Reveal>
+          ))}
+        </div>
+
+        <p className="mt-6 text-xs text-muted-foreground">
+          Concept page  team details pending confirmation by Onsite.
+        </p>
+      </div>
+    </section>
+  );
+}
+============================================================================ */

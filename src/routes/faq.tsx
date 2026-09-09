@@ -12,13 +12,13 @@ import { FAQS, COMPANY } from "@/lib/site-content";
 export const Route = createFileRoute("/faq")({
   head: () => ({
     meta: [
-      { title: "FAQs — Installation, Pricing & Support | Onsite Internet Solutions" },
+      { title: "FAQs  Installation, Pricing & Support | Onsite Internet Solutions" },
       {
         name: "description",
         content:
           "Answers about Onsite internet installation times, payment methods, data limits, support hours, coverage and upgrading your package.",
       },
-      { property: "og:title", content: "Onsite Internet Solutions — Frequently Asked Questions" },
+      { property: "og:title", content: "Onsite Internet Solutions  Frequently Asked Questions" },
       {
         property: "og:description",
         content: "Install times, payments, data limits, support and coverage answered.",
@@ -48,7 +48,7 @@ function FaqPage() {
       <PageHero
         eyebrow="FAQs"
         title="Questions we get asked most"
-        description="If your question isn't here, call or WhatsApp us — a real person answers."
+        description="If your question isn't here, call or WhatsApp us  a real person answers."
       />
 
       <section className="section-y">
@@ -67,7 +67,7 @@ function FaqPage() {
           </Accordion>
 
           <p className="mt-6 text-xs text-muted-foreground">
-            Draft answers — to be confirmed or corrected by Onsite.
+            Draft answers  to be confirmed or corrected by Onsite.
           </p>
 
           <div className="mt-10 rounded-2xl border border-border bg-surface p-6 text-center">

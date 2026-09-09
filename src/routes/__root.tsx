@@ -81,16 +81,16 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Onsite Internet Solutions — Home & Business Internet in Thika" },
+      { title: "Onsite Internet Solutions — Home & Business Internet in Juja" },
       {
         name: "description",
         content:
-          "Unlimited fibre and wireless internet for homes, businesses and schools around Thika, installed and supported by a local team.",
+          "Unlimited fibre and wireless internet for homes, businesses and schools around Juja, installed and supported by a local team.",
       },
       { property: "og:title", content: "Onsite Internet Solutions" },
       {
         property: "og:description",
-        content: "Unlimited home and business internet around Thika, installed within two working days.",
+        content: "Unlimited home and business internet around Juja, installed within two working days.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

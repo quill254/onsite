@@ -15,17 +15,17 @@ import supportTeam from "@/assets/support-team.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Onsite Internet Solutions — Fast Home & Business Internet in Thika" },
+      { title: "Onsite Internet Solutions  Fast Home & Business Internet in Juja" },
       {
         name: "description",
         content:
-          "Unlimited fibre and wireless internet for homes, businesses and schools around Thika. Check coverage, compare packages and get installed in two working days.",
+          "Unlimited fibre and wireless internet for homes, businesses and schools around Juja. Check coverage, compare packages and get installed in two working days.",
       },
-      { property: "og:title", content: "Onsite Internet Solutions — Internet that stays on" },
+      { property: "og:title", content: "Onsite Internet Solutions  Internet that stays on" },
       {
         property: "og:description",
         content:
-          "Unlimited home and business internet around Thika, installed and supported by a local team.",
+          "Unlimited home and business internet around Juja, installed and supported by a local team.",
       },
     ],
   }),
@@ -36,7 +36,7 @@ const stats = [
   { value: "99.5%", label: "Network uptime target" },
   { value: "2 days", label: "Typical install time" },
   { value: "12+", label: "Areas served" },
-  { value: "Local", label: "Thika-based engineers" },
+  { value: "Local", label: "Juja based engineers" },
 ];
 
 const services = [
@@ -71,7 +71,7 @@ const services = [
 ];
 
 const why = [
-  { icon: Gauge, title: "Unlimited internet", body: "No data worries — every package comes with unlimited data." },
+  { icon: Gauge, title: "Unlimited internet", body: "No data worries  every package comes with unlimited data." },
   { icon: ShieldCheck, title: "Ultra-speed connection", body: "High speeds guaranteed, with limits set only by the package you choose." },
   { icon: Wifi, title: "Flexible tariff plans", body: "Packages suited to homes, businesses, institutions and schools." },
   { icon: Headset, title: "Quick installation & support", body: "Set up within two working days, with 24/7 support on dedicated lines." },
@@ -84,7 +84,7 @@ function Index() {
         <div className="mx-auto grid max-w-6xl gap-10 px-4 py-16 md:grid-cols-2 md:items-center md:py-24">
           <div>
             <p className="animate-fade-in text-xs font-semibold uppercase tracking-[0.2em] text-signal">
-              Thika · Kiambu County
+              Juja · Kiambu County
             </p>
             <h1 className="mt-4 text-4xl font-bold leading-[1.05] md:text-6xl">
               <SplitText
@@ -100,7 +100,7 @@ function Index() {
               />
             </h1>
             <p className="mt-5 max-w-lg animate-fade-in text-base text-ink-foreground/75 [animation-delay:400ms] md:text-lg">
-              Unlimited fibre and wireless packages for homes, businesses and institutions —
+              Unlimited fibre and wireless packages for homes, businesses and institutions 
               installed within two working days and supported by local engineers.
             </p>
             <div className="mt-8 flex animate-fade-in flex-wrap gap-3 [animation-delay:600ms]">
@@ -197,9 +197,9 @@ function Index() {
       <section className="section-y">
         <div className="mx-auto max-w-6xl px-4">
           <Reveal>
-            <h2 className="font-display text-3xl font-bold">On the ground in Thika</h2>
+            <h2 className="font-display text-3xl font-bold">On the ground in Juja</h2>
             <p className="mt-2 max-w-2xl text-sm text-muted-foreground">
-              Placeholder imagery — to be swapped for real photos of Onsite installations, the team
+              Placeholder imagery  to be swapped for real photos of Onsite installations, the team
               and the office.
             </p>
           </Reveal>
@@ -291,7 +291,7 @@ function Index() {
             ))}
           </div>
           <p className="mt-4 text-xs text-muted-foreground">
-            Placeholder quotes — to be replaced with real customer testimonials.
+            Placeholder quotes  to be replaced with real customer testimonials.
           </p>
         </div>
       </section>
@@ -301,7 +301,7 @@ function Index() {
           <div>
             <h2 className="text-3xl font-bold">Ready to get connected?</h2>
             <p className="mt-2 text-ink-foreground/75">
-              Tell us your area and package — we'll confirm installation within a day.
+              Tell us your area and package  we'll confirm installation within a day.
             </p>
           </div>
           <Button asChild variant="signal" size="xl">
